@@ -35,7 +35,6 @@
         }
 
 
-        /* ===== HERO SECTION ===== */
         .hero {
             background: linear-gradient(135deg, var(--primary) 0%, var(--primary-light) 100%);
             color: var(--light);
@@ -120,7 +119,6 @@
             }
         }
 
-        /* ===== BENEFITS SECTION ===== */
         .benefits {
             padding: 60px 20px;
             background: var(--gray);
@@ -193,7 +191,6 @@
             }
         }
 
-        /* ===== SERVICE DETAILS SECTION ===== */
         .service-details {
             padding: 60px 20px;
             background: var(--light);
@@ -267,7 +264,6 @@
             }
         }
 
-        /* ===== GUARANTEE SECTION ===== */
         .guarantee {
             padding: 50px 20px;
             background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
@@ -303,7 +299,6 @@
             }
         }
 
-        /* ===== FAQ SECTION ===== */
         .faq {
             padding: 60px 20px;
             background: var(--gray);
@@ -392,7 +387,7 @@
             }
         }
 
-        /* ===== SERVICE AREA SECTION ===== */
+
         .service-area {
             padding: 60px 20px;
             background: var(--light);
@@ -434,7 +429,7 @@
             font-size: 0.9rem;
         }
 
-        /* ===== FOOTER CTA SECTION ===== */
+
         .foot-cta {
             padding: 50px 20px;
             background: var(--dark);
@@ -481,7 +476,7 @@
         }
 
 
-        /* ===== RESPONSIVE ADJUSTMENTS ===== */
+
         @media (max-width: 480px) {
             .hero h1 {
                 font-size: 1.5rem;
@@ -498,7 +493,7 @@
 </head>
 <body>
 
-    <!-- HERO SECTION -->
+
     <section class="hero">
         <div class="hero-content">
             <h1>Halkalı Koltuk Yıkama</h1>
@@ -507,7 +502,7 @@
         </div>
     </section>
 
-    <!-- BENEFITS SECTION -->
+
     <section class="benefits">
         <div class="benefits-container">
             <h2 class="section-title">Neden Bizi Seçmelisiniz?</h2>
@@ -546,7 +541,7 @@
         </div>
     </section>
 
-    <!-- SERVICE DETAILS -->
+
     <section class="service-details">
         <div class="details-container">
             <div class="details-image">
@@ -571,7 +566,7 @@
         </div>
     </section>
 
-    <!-- GUARANTEE SECTION -->
+
     <section class="guarantee">
         <div class="guarantee-content">
             <h2>%100 Memnuniyet Garantisi</h2>
@@ -580,7 +575,7 @@
         </div>
     </section>
 
-    <!-- FAQ SECTION -->
+
     <section class="faq">
         <div class="faq-container">
             <h2 class="section-title">Sıkça Sorulan Sorular</h2>
@@ -647,7 +642,7 @@
         </div>
     </section>
 
-    <!-- SERVICE AREA -->
+
     <section class="service-area">
         <div class="area-container">
             <h2 class="section-title">Halkalı ve Çevresinde Hizmet</h2>
@@ -682,7 +677,7 @@
 
     <script>
         function toggleFAQ(button) {
-            // Remove active class from all questions
+
             document.querySelectorAll('.faq-question').forEach(q => {
                 if (q !== button) {
                     q.classList.remove('active');
@@ -690,12 +685,12 @@
                 }
             });
 
-            // Toggle active class for clicked question
+
             button.classList.toggle('active');
             button.nextElementSibling.classList.toggle('active');
         }
 
-        // Mobile menu and smooth scrolling improvements
+
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
                 e.preventDefault();
